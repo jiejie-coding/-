@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+}
+#fl {
+  float: left;
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+}
+#fr {
+  position: relative;
+  float: right;
+  width: 50%;
+  height: 100vh;
+}
+#cnt {
+  position: fixed;
+  left:50%;
+  top: 50%;
+  transform: translate(50%,-50%);
+}
+#cnt::before,
+#cnt::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%);
+}
+
+@media (max-width: 500px) {
+  #fl {
+    height: 50vh;
+    width: 100%;
+    overflow: auto;
+  }
+  #fr {
+    background-color: #eee;
+    position: relative;
+    height: 50vh;
+    width: 100%;
+  }
+  #cnt {
+    position: absolute;
+    transform: translate(-50%,-50%);
+  }
+}

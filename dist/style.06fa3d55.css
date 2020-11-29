@@ -1,0 +1,2 @@
+*{margin:0;padding:0;box-sizing:border-box}.main{width:100vw;height:100vh}#fl{float:left;overflow:hidden}#fl,#fr{width:50%;height:100vh}#fr{position:relative;float:right}#cnt{position:fixed;left:50%;top:50%;transform:translate(50%,-50%)}#cnt:after,#cnt:before{content:"";display:block;position:absolute;left:50%;top:50%;transform:translate(-50%)}@media (max-width:500px){#fl{overflow:auto}#fl,#fr{height:50vh;width:100%}#fr{background-color:#eee;position:relative}#cnt{position:absolute;transform:translate(-50%,-50%)}}
+/*# sourceMappingURL=style.06fa3d55.css.map */
